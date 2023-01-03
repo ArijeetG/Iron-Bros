@@ -9,7 +9,6 @@ export default class TwilioSmsService {
   constructor(private readonly configService: ConfigService) {
     const accountSid = configService.get('TWILIO_ACCOUNT_SID');
     const authToken = configService.get('TWILIO_AUTH_TOKEN');
-
     this.twilioClient = new Twilio(accountSid, authToken);
   }
 

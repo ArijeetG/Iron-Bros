@@ -115,6 +115,12 @@ export class Client {
   })
   phoneNo: number;
 
+  @Prop({
+    required: true,
+    default: true,
+  })
+  active: boolean;
+
   @Prop()
   dietChart: DietChart;
 
